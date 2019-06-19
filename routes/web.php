@@ -39,4 +39,6 @@ EOF;
 
 Route::get('hello', function () use ($html) {
   return $html;
+
+Route::get('hello/{id?}/{pass?}', 'HelloController@index');
 });
