@@ -24,7 +24,8 @@ class HelloController extends Controller
 {
   public function index()
 {
-  $data = ['msg'=>'これはコントローラから渡されたメッセージです'];
+  $data = ['msg'=>'Blade渡されたメッセージです'
+          ];
   return view('hello.index', $data);
   }
 
