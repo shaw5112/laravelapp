@@ -41,5 +41,4 @@ Route::get('/', function () {
 //   return $html;
 
 Route::get('hello', 'HelloController@index');
-Route::get('hello/other', 'HelloController@other');
 
