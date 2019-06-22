@@ -24,9 +24,17 @@ class HelloController extends Controller
 {
   public function index()
 {
-  $data = ['msg'=>'Blade渡されたメッセージです'
+  $data = ['msg'=>'名前を入力してください'
           ];
   return view('hello.index', $data);
+  }
+
+  public function post(Request $request)
+  {
+    $data = [
+      'msg'=>'こんにちわ' . msg . 'さん',
+    ];
+    return view('hello.index', $data);
   }
 
 }
